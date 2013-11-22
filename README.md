@@ -1,0 +1,4 @@
+votinglike
+==========
+
+Voting Like button

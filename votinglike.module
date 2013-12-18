@@ -44,14 +44,12 @@ function votinglike_theme($existing, $type, $theme, $path) {
  * Implements hook_entity_view().
  */
 function votinglike_entity_view($entity, $type, $view_mode, $langcode) {
-
 	if (!in_array($type, array('node', 'comment', 'user'))) {
 		return;
 	}
 
 	if ($type == 'user') {
-		$comment_node = node_load($entity->nid);
-		// Check if LikeBtn is enabled for comments to the current node type.
+		// Check if Voting Like is enabled for current user.
 		if (!variable_get('votinglike_user_enabled', TRUE)) {
 			return;
 		}
@@ -257,7 +255,6 @@ function votinglike_unvote($type, $eid, $uid, $tag =NULL){
 		$function($type, $eid, $uid, $tag);
 	}
 }
-
 
 
 

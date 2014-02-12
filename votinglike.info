@@ -1,0 +1,12 @@
+; $Id: votinglike.info,v 1.3 2013/11/20 11:11:07 drumm Exp $
+name = Voting like button
+description = Provides a fully customizable like button widget.
+package = Voting
+core = 7.x
+
+configure = admin/config/search/votinglike
+
+version = "7.x.1.0"
+core = "7.x"
+project = "votinglike"
+datestamp = "1384921000"
